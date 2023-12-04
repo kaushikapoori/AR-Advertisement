@@ -3,48 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your AR App</title>
-    <!-- You can link your CSS file here -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Augmented Reality Advertisement</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background: #eee;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .hero-section {
+            background: url('path/to/background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px;
+        }
+
+        .video-section {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #555;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#video">Video</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Header Section with Background Image -->
-    <header style="background-image: url('your-background-image.jpg');">
-        <h1>Welcome to Your AR App</h1>
-        <p>Experience augmented reality like never before!</p>
-        <a href="#download" class="cta-button">Download Now</a>
+    <header>
+        <h1>AR Advertisement</h1>
     </header>
 
-    <!-- Features Section -->
-    <section id="features">
-        <h2>Key Features</h2>
-        <ul>
-            <li>Immersive AR experience</li>
-            <li>Interactive 3D models</li>
-            <li>Real-time tracking</li>
-            <!-- Add more features as needed -->
-        </ul>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <h2>Welcome to Augmented Reality Advertisement</h2>
+        <p>Your innovative solution for interactive advertising.</p>
+        <a href="#contact" class="button">Get Started</a>
     </section>
 
-    <!-- Video Section -->
-    <section id="video">
-        <h2>AR in Action</h2>
-        <!-- Embed your AR video here -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-ar-video-id" frameborder="0" allowfullscreen></iframe>
+    <section id="video" class="video-section">
+        <h2>See AR in Action</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
         <form>
@@ -52,21 +99,18 @@
             <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="text" id="email" name="email" required>
 
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit">Send Message</button>
+            <input type="submit" value="Submit" class="button">
         </form>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2023 Your AR App. All rights reserved.</p>
+        <p>&copy; 2023 Augmented Reality Advertisement. All rights reserved.</p>
     </footer>
 
-    <!-- You can link your JavaScript file here -->
-    <!-- <script src="script.js"></script> -->
 </body>
 </html>
